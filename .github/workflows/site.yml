@@ -16,6 +16,7 @@ jobs:
         sudo apt-get install -y python3-sphinx
         python3 -m pip install --upgrade pip
         python3 -m pip install setuptools
+        python3 -m pip install -r requirements.txt
     - name: Build the docset
       run: make html ; cd ..
     - name: Get output time
